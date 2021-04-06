@@ -1,8 +1,10 @@
 import './App.css';
+import Navbar from "./components/Navbar"
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Component } from 'react';
 function App() {
   return (
-    <h1>Md Emran Hossain Eju</h1>
+    <Navbar />
   );
 }
 

@@ -36,3 +36,56 @@
     transform: rotate(360deg);
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+:root{
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+}
+body{
+  font-family: "PlayBall" !important;
+  
+}
+/**********************Navbar************************/
+.logo {
+  width: 6.25rem;
+}
+
+nav a.nav-link {
+  
+  letter-spacing: .0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a{
+  margin-right: .75rem;
+  margin-left: .75rem;
+  color : var(--primary-white) !important;
+  border-top: 0.1775rem solid var(--primary-dark);
+}
+
+.navbar-brand{
+  max-width: 18rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+
+
+
+
+
+
