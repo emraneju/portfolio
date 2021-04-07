@@ -42,12 +42,17 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 body{
-  font-family: "PlayBall" !important;
+  font-family: "PlayBall" , "sans-serif";
   
 }
 /**********************Navbar************************/
+nav {
+  z-index: 2;
+}
 .logo {
   width: 6.25rem;
 }
@@ -83,9 +88,113 @@ nav ul li {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
+/**********************Header************************/
+.header-wrapper {
+  position: relative;
+  background: url(Back.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 21rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "PlayBall" ,"Times New Roman";
+  z-index: 1;
+}
+@media(max-width:760px){
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "PlayBall" ,"Times New Roman";
+    z-index: 1;
+  }
+}
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  padding-bottom: 6rem;
+
+}
+@media(max-width:760px){
+  .main-info h1{
+    font-size: 1rem !important;
+    padding-bottom: 2rem;
+  }
+}
+
+/**********************Typed Text************************/
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+  padding-right: 5rem;
+  
+}
+@media(max-width:760px){
+  .typed-text {
+    font-size: 1rem !important;
+    padding-right: 3rem;
+    margin-top: 6rem;
+  }
+}
 
 
+/**********************Header main offer button************************/
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: .625rem .75rem .75rem .75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  margin-right: 7rem;
+}
+@media(max-width:760px){
+  .btn-main-offer {
+    font-size: 1rem !important;
+    border: 1px solid var(--primary-red);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: .625rem .75rem .75rem .75rem;
+    color: var(--primary-white);
+    margin: 2rem;
+    margin-right: 3rem;
+    margin-top: 10rem;
+  }
+}
 
 
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
 
-
+/**********************Particle JS************************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+@media(max-width:760px){
+  .particles-canvas{
+    display: none;
+  }
+}
